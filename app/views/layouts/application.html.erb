@@ -18,11 +18,11 @@
       </header>
       <nav id="menubar">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Galleries</li>
-          <li>Contact</li>
-          <li>Shop</li>
+          <li><%= link_to "HOME",      home_path %></li>
+          <li><%= link_to "ABOUT",     about_path %></li>
+          <li><%= link_to "GALLERIES", home_path %></li>
+          <li><%= link_to "CONTACT",   contact_path %></li>
+          <li><%= link_to "SHOP",      home_path %></li>
         </ul>
       </nav>
       <%= yield %>
