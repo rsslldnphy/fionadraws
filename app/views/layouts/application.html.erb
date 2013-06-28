@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Fiona</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>"Fiona Draws" - the illustrations of Fiona Dunphy</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="window" class="container-fluid">
+      <div class="bordered">
+      <header id="main-title">
+        <h1>FIONA DRAWS</h1>
+        <h3>The illustrations of Fiona Dunphy</h3>
+      </header>
+      <nav id="menubar">
+        <ul>
+          <li>Home</li>
+          <li>Galleries</li>
+          <li>CV</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <%= yield %>
+    </div>
+    </div>
+  </body>
 </html>
