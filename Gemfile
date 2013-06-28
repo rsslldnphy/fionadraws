@@ -24,6 +24,7 @@ group :doc do
 end
 
 gem 'unicorn'
+gem 'newrelic_rpm'
 
 group :development do
   gem "letter_opener"
