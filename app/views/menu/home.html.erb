@@ -3,7 +3,9 @@
     <%= image_tag 'test-thumb1.jpg' %>
   </div>
   <div class="picture span4">
-    <%= image_tag 'test-thumb3.jpg' %>
+    <%= link_to fauna_galleries_path do %>
+      <%= image_tag 'gallery2.png' %>
+    <% end %>
   </div>
   <div class="picture span4">
     <%= image_tag 'test-thumb6.jpg' %>

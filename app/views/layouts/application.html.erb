@@ -13,18 +13,11 @@
     <div id="window" class="container-fluid">
       <div class="bordered">
       <header id="main-title">
-        <h1>FIONA DRAWS</h1>
-        <h3>The illustrations of Fiona Dunphy</h3>
+        <%= image_tag 'header.png', title: "Fiona Draws - the illustrations of Fiona Dunphy" %>
+        <hr>
+        <small>fiona dunphy illustration</small>
+        <small><a href="mailto:fiona@fionadraws.com">fiona@fionadraws.com</a></small>
       </header>
-      <nav id="menubar">
-        <ul>
-          <li><%= link_to "HOME",      home_path %></li>
-          <li><%= link_to "ABOUT",     about_path %></li>
-          <li><%= link_to "GALLERIES", home_path %></li>
-          <li><%= link_to "CONTACT",   contact_path %></li>
-          <li><%= link_to "SHOP",      home_path %></li>
-        </ul>
-      </nav>
       <%= yield %>
     </div>
     </div>
