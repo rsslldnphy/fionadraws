@@ -2,4 +2,12 @@
   <% @gallery.pictures.each do |picture| %>
     <%= image_tag picture.path %>
   <% end %>
+  <div class="pagination-links">
+    <% if @gallery.id > 1 %>
+      <%= link_to "previous gallery", gallery_path(@gallery.id - 1), class: 'prev-gallery' %>
+    <% end %>
+    <% if @gallery.id < 6 %>
+      <%= link_to "next gallery", gallery_path(@gallery.id + 1) , class: 'next-gallery'%>
+    <% end %>
+  </div>
 </div>
