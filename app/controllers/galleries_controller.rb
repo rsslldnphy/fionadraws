@@ -1,23 +1,6 @@
 class GalleriesController < ApplicationController
 
-  def missed_opportunities
-  end
-
-  def fauna
-  end
-
-  def editorial
-  end
-
-  def book_covers
-  end
-
-  def toothpaste
-  end
-
-  def dogs_dinner
-  end
-
-  def misc
+  def show
+    @gallery = Gallery.all.find { |g| g.id == params[:id].to_i }
   end
 end

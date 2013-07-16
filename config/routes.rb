@@ -7,17 +7,7 @@ Fiona::Application.routes.draw do
   get 'about' => 'menu#about'
   get 'contact' => 'menu#contact'
 
-  resources :galleries, only: [] do
-    collection do
-      get :missed_opportunities
-      get :fauna
-      get :editorial
-      get :book_covers
-      get :toothpaste
-      get :dogs_dinner
-      get :misc
-    end
-  end
+  resources :galleries, only: [:show]
 
   root 'menu#home'
 end
